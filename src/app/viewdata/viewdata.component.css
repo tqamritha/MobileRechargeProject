@@ -1,0 +1,14 @@
+.t{
+    width: 300px;
+}
+
+body{
+
+  background-image: url(/assets/newimg.jpg);
+  
+    /* background-color:darkkhaki; */
+       
+}
+th,td{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

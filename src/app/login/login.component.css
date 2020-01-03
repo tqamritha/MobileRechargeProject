@@ -1,0 +1,14 @@
+ 
+ .body{
+    background-image: url(/assets/loginimg.jpg);
+    padding-top:100px;
+    padding-bottom:100px;
+    background-size:cover;
+}
+
+
+ .jumbotron{
+    height:80%;
+    width:90%;
+    margin-left:12%;
+}  

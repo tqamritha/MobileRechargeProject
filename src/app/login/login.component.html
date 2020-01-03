@@ -1,0 +1,38 @@
+<div class="body">
+<div class="container">
+  <div class="jumbotron">
+<h2 style="text-align: center">User Login</h2>
+<form #form=ngForm>
+<div class="form-group">
+        <label>Username</label>
+
+        <input type= "text" class="form-control" #nm="ngModel" ngModel name="email" 
+         required minlength="5">
+    
+       <div class="alert alert-danger" *ngIf="nm.invalid && nm.touched">
+          <div *ngIf="nm.errors.required"> Username is Required</div>
+          <div *ngIf="nm.errors.minlength">Name should be minimum of 5 letters</div>
+          </div>
+</div>
+
+<div class="form-group">
+        <label>Password</label>
+        <input type= "password" class="form-control" #pass="ngModel" ngModel name="password" 
+         required minlength="8">
+        <div class="alert alert-danger" *ngIf="pass.invalid && pass.touched">
+          <div *ngIf="pass.errors.required">Password is Required</div>
+          <div *ngIf="pass.errors.minlength">Password should be minimum of 8 letters</div>
+        </div>
+    </div>
+    
+
+    <div class="form-group">
+      <button [disabled]="loading" type="submit" class="btn btn-primary" (click)="onSubmit(form.value)" value="submit" [disabled]="form.invalid"> Login</button>
+      &nbsp;&nbsp;&nbsp;<span><a (click)="go()"><u>Create an Account</u></a></span>
+    </div>
+    
+     
+</form>
+</div>
+</div>
+</div>

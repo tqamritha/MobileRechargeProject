@@ -1,0 +1,45 @@
+<br>
+<br>
+<body>
+    
+    <div class="form-group t">
+        <label for="operator">
+          Operators
+        </label>
+        <select name="operator" (change)="sel($event.target.value)" class="form-control">
+            <option *ngFor="let a of arr">{{a}}</option>      
+        </select>
+    </div>
+<br>
+<br>
+<table class="table table-bordered" >
+    <tr>
+        <th>Operator Id</th>
+        <th>Operator Name</th>
+        <th>Description</th>
+        <th>Rate</th>
+        <th>Action</th>
+    </tr>
+    <ng-container *ngFor="let v of view;let i=index;">
+    <tr *ngIf="data=='all' || data==v.operator">
+        <td>{{v.id}}</td>
+        <td>{{v.operator}}</td>
+        <td>{{v.des}}</td>
+        <td>{{v.rate}}</td>
+        <td>
+            <button type="button" class="btn btn-dark"><a [routerLink]="['/update',i]">Edit</a></button>&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-danger" (click)="delete(i)">Delete</button>
+        </td>
+    </tr>
+    </ng-container>
+
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>

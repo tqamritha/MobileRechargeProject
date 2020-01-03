@@ -1,0 +1,16 @@
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: oblique;
+    color: green;
+
+}
+
+.body{
+    background-image: url(/assets/newimg1.jpg);
+   height: 1200px;
+}
+tr,td,th{
+    border-color: chocolate;
+    border-radius: 10px;
+}

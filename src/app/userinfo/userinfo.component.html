@@ -1,0 +1,44 @@
+<br>
+<br>
+
+     <!-- <div class="form-group t">
+        <label for="operator">
+          Operators
+        </label>
+        <select name="operator" (change)="sel($event.target.value)" class="form-control">
+            <option *ngFor="let a of arr">{{a}}</option>      
+        </select> 
+    </div>  -->
+       <div class="body">          
+    <h2 style="text-align: center">User Details</h2>
+    <div >   
+<br>
+<br>
+<table class="table table-bordered" >
+    <tr>
+        <th>User Id</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Mobile no</th>
+    </tr>
+    <ng-container *ngFor="let v of view;let i=index;">
+    <!-- <tr *ngIf="data=='all' || data==v.operator"> -->
+        <tr>
+        <td>{{v.userid}}</td>
+        <td>{{v.name}}</td>
+        <td>{{v.email}}</td>
+        <td>{{v.password}}</td>
+        <td>{{v.mobile}}</td>
+
+        <!-- <td>
+            <button type="button" class="btn btn-dark"><a [routerLink]="['/update',i]">Edit</a></button>&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-danger" (click)="delete(i)">Delete</button>
+        </td> -->
+    </tr>
+    </ng-container>
+
+</table>
+
+</div>
+</div>   

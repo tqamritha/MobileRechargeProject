@@ -1,0 +1,15 @@
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-decoration-color: darkblue;
+    text-align: center
+}
+.body{
+     background-image: url(/assets/orange.jpg);
+    height: 1200px;
+    background-size: 900px;
+    
+}
+
+
+

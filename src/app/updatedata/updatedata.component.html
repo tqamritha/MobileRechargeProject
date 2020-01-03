@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Add Recharge</h2>
+    <form>
+            
+        <div class="form-group">
+            <label for="operator">
+                Select Operator
+            </label>
+            <select name="operator" (change)="sel($event.target.value)" class="form-control" [(ngModel)]=list.operator>
+                <option *ngFor="let a of arr">{{a}}</option>      
+            </select>
+        </div>
+        <div class="form-group">
+            <label >Description</label>
+            <input type="text" class="form-control" name="des" [(ngModel)]=list.des>
+        </div>
+        <div class="form-group">
+          <label >Rate</label>
+          <input type="number" class="form-control"  name="rate" [(ngModel)]=list.rate>
+      </div>
+        <button class="btn btn-primary" (click)=" addrech()">Submit</button>
+        
+    </form>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>User form</h2>
+    <form #user="ngForm">
+        <div class="form-group">
+          <label >Mobile Number</label>
+         <input type="number" class="form-control" #nm="ngModel" ngModel name="num">
+         </div>
+        <div class="form-group">
+            <label >Description</label>
+            <input type="text" class="form-control" #des="ngModel" ngModel name="des">
+        </div>
+        <button class="btn btn-primary" (click)="onSubmit(user.value)" value="submit">Submit</button>&nbsp;
+        <button class="btn btn-primary"(click)="goback()">Logout</button>
+    </form>
+</div>

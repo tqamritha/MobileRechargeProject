@@ -1,0 +1,17 @@
+.connect
+{
+
+    background-image: url("src/assets/contactimg.jpg");
+    background-color: chocolate;
+    height: 600px;
+    background-size: cover;
+  
+}
+h2
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+
+}

@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Payments Details</h2>
+    <br>
+    <form #class="ngForm">
+        <div class="form-group">
+            <label>
+                Payment Mode
+            </label>
+            <select name="pay" id="pay" [(ngModel)]="mode" class="form-control">
+                    <option value="1">Net-Banking</option>
+                    <option value="2">Card Payment</option>
+                    
+            </select>
+        </div>
+        <button class="btn btn-primary">Procced</button>
+    </form>
+</div>

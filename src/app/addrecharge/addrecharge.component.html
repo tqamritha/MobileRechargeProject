@@ -1,0 +1,31 @@
+
+<div class="body">
+<div class="container">
+  
+    <h2 style="color:lawngreen">Add Recharge</h2>
+    <br>
+    <form #frm="ngForm">
+          <div class="form-group">
+            <label for="operator">
+                Select Operator
+            </label>
+             <select name="operator" (change)="sel($event.target.value)" class="form-control">
+                 <option *ngFor="let a of arr">{{a}}</option>      
+            </select>
+        </div>
+        <div class="form-group">
+            <label >Description</label>
+            <input type="text" class="form-control" [(ngModel)]="data.des" name="des">
+            <!-- <input type= "text" class="form-control"  [(ngModel)]="data.des" name="des" 
+            pattern="[A-Za-z]{1,32}"> -->
+        </div>
+        <div class="form-group">
+          <label >Rate</label>
+          <input type="number" class="form-control" [(ngModel)]="data.rate" name="rate" required>
+      </div>
+        <button class="btn btn-primary" (click)="onSubmit(frm.value)" [disabled]="frm.invalid">Submit</button>
+        
+    </form>
+
+</div>
+</div>
